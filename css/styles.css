@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.heading {
+  margin: 20px 40px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 40px;
+  /* padding: 32px 36px; */
+}
+
+main{
+  text-align: left;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.main-container {
+  margin: 10% 20%;
+}
+
+.logo {
+  margin: 16px 40px;
+  margin-top: 2.5rem;
+}
+
+.sedans-container {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.suv-container {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* buttons */
+.button {
+  margin: 40px;
+
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.sedans-container .button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-container .button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-container .button {
+  color: hsl(179, 100%, 13%);
+}
+
+/* hover */
+.sedans-container .button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.suv-container .button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.luxury-container .button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 767px) {
+  .sedans-container {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .suv-container {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .luxury-container {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+
+.attribution {
+  color: #000;
+  font-size: 0.6875rem;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(25, 97%, 53%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(178, 100%, 50%);
+}
