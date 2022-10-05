@@ -6,43 +6,30 @@
 body {
   font-family: 'Lexend Deca', sans-serif;
   background-color: hsl(0, 0%, 95%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
-
-h1 {
-
+.row {
+  margin: 0;border-radius: 10px;
+  overflow: hidden;
+}
+h1, h2 {
   color: hsl(0, 0%, 95%);
   font-family: 'Big Shoulders Display', cursive;
 }
 
-.heading {
-  margin: 20px 40px;
-}
-
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  margin: 40px;
-  /* padding: 32px 36px; */
 }
 
-main{
-  text-align: left;
-  margin: auto;
-  border-radius: 10px;
-}
-
-.main-container {
-  margin: 10% 20%;
-}
-
-.logo {
-  margin: 16px 40px;
-  margin-top: 2.5rem;
+.card-container {
+  max-width: 58rem;
+  padding: 1.2rem;
 }
 
 .sedans-container {
   background-color: hsl(31, 77%, 52%);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 .suv-container {
@@ -51,14 +38,10 @@ main{
 
 .luxury-container {
   background-color: hsl(179, 100%, 13%);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 /* buttons */
 .button {
-  margin: 40px;
-
   border: 2px solid hsl(0, 0%, 95%);
   border-radius: 2rem;
   padding: 0.5rem 2rem;
@@ -91,26 +74,6 @@ main{
   background-color: hsl(179, 100%, 13%);
   color: hsl(0, 0%, 95%);
 }
-
-@media only screen and (max-width: 767px) {
-  .sedans-container {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-  }
-
-  .suv-container {
-    background-color: hsl(184, 100%, 22%);
-  }
-
-  .luxury-container {
-    background-color: hsl(179, 100%, 13%);
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-}
-
 
 .attribution {
   color: #000;
